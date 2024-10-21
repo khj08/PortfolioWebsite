@@ -84,7 +84,7 @@ textarea {
 
 body {
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: #2A232F;
 }
 
 h1,
@@ -121,7 +121,7 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
-  color: #2A232F;
+  color: #58445F;
 }
 
 .section__subtitle {
@@ -165,6 +165,11 @@ img {
 .button__icon {
   margin-left: var(--mb-);
   color: #58445F;
+  transition: all .3s;
+}
+
+.button__icon:hover {
+  transform: scale(1.2);
 }
 
 .button--flex {
@@ -188,6 +193,11 @@ img {
     width: 22px;
     height: 22px;
   }
+
+  .uil-apps {
+    color: #F4EFF7;
+  }
+
 }
 
 /* For medium devices */
@@ -203,6 +213,7 @@ img {
   .section__subtitle {
     margin-bottom: var(--mb-3);
   }
+  
 }
 
 @media screen and (max-width: 576px) {

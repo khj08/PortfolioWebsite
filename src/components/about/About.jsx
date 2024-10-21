@@ -22,7 +22,7 @@ const About = () => {
                 <a download="" href={CV} className="button button--flex">Downnload CV
                   
                 <svg
-                class="button__icon-skills"
+                className="button__icon-skills"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

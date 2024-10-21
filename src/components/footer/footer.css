@@ -1,58 +1,65 @@
 .footer {
-    background-color: var(--container-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #58445F;
 }
 
 .footer__container {
-    padding: 2rem 0 6rem;
+    padding: 1.1rem;
 }
 
 .footer__title,
 .footer__link {
-    color: var(--title-color);
+    color: #F6F2F8;
 }
 
 .footer__title {
     text-align: center;
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-0-25);
+    color: #F6F2F8;
 }
 
 .footer__link:hover {
-    color: var(--title-color-dark);
+    color: #C0B8CC;
 }
 
 .footer__list {
     display: flex;
     justify-content: center;
-    column-gap: 1.5rem;
-    margin-bottom: var(--mb-2);
+    column-gap: 3rem;
+    margin-bottom: var(--mb-0-25);
+    margin-top: var(--mb-0-75);
+    font-size: 1.125rem;
+    color: #C0B8CC;
 }
 
 .footer__social {
     display: flex;
     justify-content: center;
-    column-gap: 1.25rem;
+    column-gap: 1rem;
 }
 
 .footer__social-link {
-    background-color: var(--title-color);
-    color: var(--container-color);
-    font-size: 1.125rem;
-    padding: 0.4rem;
+    background-color: #F6F2F8;
+    color: #58445F;
+    font-size: 1.5rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
     display: inline-flex;
+    margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .footer__social-link:hover {
-    background-color: var(--title-color-dark);
+    background-color: #C0B8CC;
 }
 
 .footer__copy {
+    border-top: 2px solid #C0B8CC;
     display: block;
-    margin-top: 4.5rem;
-    color: var(--title-color);
+    margin-top: 1rem;
+    color: #F6F2F8;
     text-align: center;
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
+    background-color: #58445F;
+    padding: 0.6rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -61,8 +68,11 @@
     .footer__social-link {
         padding: 0.25rem;
         border-radius: 0.25rem;
-        font-size: 1rem;
+        font-size: 1.4rem;
     } 
+    .footer__social {
+        display: block;
+    }
    }
    
    /* For medium devices */
@@ -71,11 +81,36 @@
    }
    
    @media screen and (max-width: 576px) {
- 
+    .footer {
+        width: 110%;
+    }
    }
    
    /* For small devices */
    @media screen and (max-width: 350px) {
+    .footer {
+        width: 150%;
+    }
+
+    .footer__list {
+        display: block;
+        margin-right: 2rem;
+    }
+
+    .footer__social {
+        margin-left: 2rem;
+    }
+
+    .footer__copy {
+        font-size: var(--smaller-font-size);
+        margin-right: 2rem;
+    }
+    
+    .footer__list li {
+        display: grid;
+        justify-content: center;
+
+    }
      
    }
 

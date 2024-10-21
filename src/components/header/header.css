@@ -72,11 +72,20 @@
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: var(--body-color);
+        background-color: #58445F;
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
+    }
+
+    .nav__link {
+        color: #ECE4F1;
+    }
+
+    .active-link,
+    .nav__:hover {
+    color: rgb(255, 25, 190);
     }
 
     /*Show Menu*/
@@ -88,6 +97,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        
     }
 
     .nav__icon {
@@ -100,11 +110,11 @@
         bottom: 0.5rem;
         font-size: 1.5rem;
         cursor: pointer;
-        color: var(--title-color);
+        color: #ECE4F1;
     }
 
     .nav__close:hover {
-        color: var(--title-color-dark);
+        color: #C0B8CC;
     }
 
     .nav__toggle {

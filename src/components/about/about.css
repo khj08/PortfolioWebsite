@@ -19,15 +19,20 @@
 
 .about__box {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #C0B8CC;
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
+    transition: all .3s;
+}
+
+.about__box:hover {
+    transform: scale(1.2);
 }
 
 .about__icon {
     font-size: 2.2rem;
-    color: #2A232F;
+    color: #58445F;
     margin-bottom: var(--mb-0-5);
 }
 
@@ -73,8 +78,8 @@
     }
 
     .about__description {
-        padding: 0 5rem;
-        margin-bottom: 2rem;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
     }
   
   }
@@ -86,18 +91,21 @@
   
   @media screen and (max-width: 576px) {
     .about__info {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about__description {
-        padding: 0;
+        padding: 0 2rem;
     }
   }
   
   /* For small devices */
   @media screen and (max-width: 350px) {
     .about__info {
-        grid-template-columns: repeat(2, 1fr);     
+        grid-template-columns: repeat(1, 1fr);     
     }    
+    .about__description {
+        padding: 0 0.5rem;
+    }
   }
   

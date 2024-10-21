@@ -17,11 +17,13 @@
 
 .home__social-icon {
     font-size: 1.8rem;
-    color: #2A232F;
+    color: #58445F;
+    transition: all .3s;
 }
 
 .home__social-icon:hover {
     color: #58445F;
+    transform: scale(1.2);
 }
 
 .home__title {

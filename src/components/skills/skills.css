@@ -57,13 +57,21 @@
 @media screen and (max-width: 992px) {
     .skills__container {
         grid-template-columns: max-content;
-        row-gap: 2rem;
+        row-gap: 3rem;
     }   
+    .button__icon {
+        width: 4rem;
+        height: 4rem;
+    }
   }
   
   /* For medium devices */
   @media screen and (max-width: 768px) {
-    
+    .button__icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
   }
   
   @media screen and (max-width: 576px) {
@@ -71,19 +79,25 @@
         grid-template-columns: 1fr;
     }
 
-    .skills__container {
-        padding: 1.5rem;
+    .skills__box {
+       
     }
   }
   
   /* For small devices */
   @media screen and (max-width: 350px) {
+
     .skills__box {
-        column-gap: 1.25rem;
+        display: block;
     }
 
     .skills_name {
         font-size: var(--small-font-size);
     }    
+    
+    .skills__content {
+       justify-content: center;
+    }
   }
+    
   
