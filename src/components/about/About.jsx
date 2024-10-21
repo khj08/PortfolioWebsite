@@ -1,8 +1,9 @@
 import React from 'react';
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/John-Cv.pdf";
+import AboutImg from "../../assets/me.jpg";
+import CV from '../../assets/CV-KatherineHJ.pdf'
 import Info from './Info';
+import ScrollDown from '../home/ScrollDown'
 
 const About = () => {
   return (
@@ -12,15 +13,16 @@ const About = () => {
         
         <div className="about__container container grid">
             <img src={AboutImg} alt="" className="about__img" />
-
+              
             <div className="about__data">
                 <Info />
 
-                <p className="about__description">Front Developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+                <p className="about__description">My name is Katherine, I’m Front End and Web developer, I am constantly acquiring knowledge, be it new languages, frameworks and agile work methodologies, which allow optimal and effective delivery of the project. My objective is to grow and acquire all the necessary knowledge to be a good professional.</p>
 
                 <a download="" href={CV} className="button button--flex">Downnload CV
+                  
                 <svg
-                class="button__icon"
+                class="button__icon-skills"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -45,7 +47,9 @@ const About = () => {
                 ></path>
               </svg>
                 </a>
+                
             </div>
+            
         </div>
     </section>
   )

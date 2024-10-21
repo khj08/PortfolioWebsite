@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: #58445F;
 }
 
 .nav {
@@ -17,8 +17,9 @@
 
 .nav__logo,
 .nav_toggle {
-    color: var(--title-color);
+    color: #F6F2F8;
     font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
 }
 
 .nav__list {
@@ -30,8 +31,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
-    color: var(--title-color);
+    font-size: var(--normal-font-size);
+    color: #F6F2F8;
     font-weight: var(--font-medium);
     transition: .3s;
 }
@@ -46,7 +47,7 @@
 
 .active-link,
 .nav__:hover {
-    color: yellow;
+    color: rgb(255, 25, 190);
 }
 
 /* Change background header */

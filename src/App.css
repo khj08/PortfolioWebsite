@@ -12,7 +12,7 @@
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --body-color: #F4EFF7;
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
@@ -121,12 +121,14 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  color: #2A232F;
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
+  color: #58445F;
 }
 
 .section__title,
@@ -149,7 +151,7 @@ img {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: #2A232F;
   color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
@@ -157,11 +159,12 @@ img {
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: #58445F;
 }
 
 .button__icon {
-  margin-left: var(--mb-0-5);
+  margin-left: var(--mb-);
+  color: #58445F;
 }
 
 .button--flex {
